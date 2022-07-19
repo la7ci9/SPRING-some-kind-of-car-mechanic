@@ -1,5 +1,41 @@
 package com.learn.service;
 
+import java.util.List;
+
+import com.learn.entity.Employee;
+import com.learn.repository.EmployeeRepository;
+
 public class EmployeeService implements EmployeeServiceDAO{
+	
+	private EmployeeRepository employeeRepository;
+
+	public EmployeeService(EmployeeRepository employeeRepository) {
+		this.employeeRepository = employeeRepository;
+	}
+
+	@Override
+	public List<Employee> getAllEmployee() {
+		return employeeRepository.findAll();
+	}
+
+	@Override
+	public Employee saveEmployee(Employee emp) {
+		return employeeRepository.save(emp);
+	}
+
+	@Override
+	public Employee getEmployeeById(Long id) {
+		return employeeRepository.findById(id).get();
+	}
+
+	@Override
+	public Employee updateEmployee(Employee emp) {
+		return saveEmployee(emp);
+	}
+
+	@Override
+	public void deleteEmployee(Long id) {
+		employeeRepository.deleteById(id);
+	}
 
 }

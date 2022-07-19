@@ -2,9 +2,12 @@ package com.learn.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.learn.entity.Car;
 import com.learn.repository.CarRepository;
 
+@Service
 public class CarService implements CarServiceDAO {
 	
 	private CarRepository carRepository;

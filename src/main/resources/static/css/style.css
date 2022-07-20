@@ -1,6 +1,6 @@
-h1{
-	background-color: #00BFFF;
-	margin-bottom: 15px
+br {
+   display: block;
+   margin: 10px 0;
 }
 
 .sidenav {
@@ -10,7 +10,7 @@ h1{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #D2691E;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -19,10 +19,34 @@ h1{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #111;
   display: block;
 }
 
 .sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.rightupnav{
+	height: 140px;
+  	width: 100%;
+ 	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #D2691E;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.rightupnav a {
+	float: left;
+  	text-decoration: none;
+  	font-size: 25px;
+  	color: #111;
+  	display: block;
+}
+
+.rightupnav a:hover {
   color: #f1f1f1;
 }

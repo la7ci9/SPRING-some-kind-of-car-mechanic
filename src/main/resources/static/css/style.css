@@ -48,5 +48,18 @@ br {
 }
 
 .rightupnav a:hover {
-  color: #f1f1f1;
+  color: #228B22;
+}
+
+.newworkTable{
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+	text-align: center;
+}
+
+.newworkTable table {
+	text-align: left;
+	margin: auto;
+	border: 2px solid #D2691E;
 }

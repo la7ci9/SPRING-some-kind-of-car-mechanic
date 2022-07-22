@@ -1,6 +1,6 @@
 br {
    display: block;
-   margin: 10px 0;
+   margin: 30px 0;
 }
 
 .sidenav {
@@ -16,7 +16,7 @@ br {
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 30px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
   color: #111;
@@ -28,19 +28,19 @@ br {
 }
 
 .rightupnav{
-	height: 140px;
+	height: 100px;
   	width: 100%;
  	position: fixed;
-	z-index: 1;
 	top: 0;
-	left: 0;
+	right: 0;
 	background-color: #D2691E;
 	overflow-x: hidden;
 	padding-top: 20px;
 }
 
 .rightupnav a {
-	float: left;
+	float: right;
+	padding:25px 40px 10px 5px;
   	text-decoration: none;
   	font-size: 25px;
   	color: #111;

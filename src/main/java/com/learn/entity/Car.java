@@ -17,9 +17,11 @@ public class Car {
 	private String carModell;
 	private String plate;
 	private String status;
+	private String problemDescription;
+	private String mechanicName;
 	
 	public Car() {
-		//empty consturctor
+		//empty constructor
 	}
 	
 	public Car(String carBrand, String carModell, String plate, String status) {
@@ -69,4 +71,19 @@ public class Car {
 		this.status = status;
 	}
 
+	public String getProblemDescription() {
+		return problemDescription;
+	}
+
+	public void setProblemDescription(String problemDescription) {
+		this.problemDescription = problemDescription;
+	}
+
+	public String getMechanicName() {
+		return mechanicName;
+	}
+
+	public void setMechanicName(String mechanicName) {
+		this.mechanicName = mechanicName;
+	}
 }

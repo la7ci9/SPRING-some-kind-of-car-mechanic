@@ -2,11 +2,41 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>New Work</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
 </head>
 <body>
 
-<h1>New Work page</h1>
+	<div class="newworkTable">
+	<form action="">
+	
+		<h1>Record a new work</h1>
+			<table>
+			
+				<tr>
+					<td>Car Brand:</td>
+					<td><input/>
+				</tr>
+				<tr>	
+					<td>Car Modell:</td>
+					<td><input/>
+				</tr>
+				<tr>
+					<td>Plate Number:</td>
+					<td><input placeholder="XXX000"/>
+				</tr>
+				<tr>
+					<td>Problem description:</td>
+					<td><input/>
+				</tr>				
+			
+			</table>
+	
+	</form>
+	
+	
+	</div>
+
 
 </body>
 </html>

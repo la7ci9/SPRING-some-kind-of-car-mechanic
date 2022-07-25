@@ -14,7 +14,7 @@ public class Car {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String carBrand;
-	private String carModell;
+	private String carModel;
 	private String plate;
 	private String status;
 	private String problemDescription;
@@ -24,9 +24,9 @@ public class Car {
 		//empty constructor
 	}
 	
-	public Car(String carBrand, String carModell, String plate, String status) {
+	public Car(String carBrand, String carModel, String plate, String status) {
 		this.carBrand = carBrand;
-		this.carModell = carModell;
+		this.carModel = carModel;
 		this.plate = plate;
 		this.status = status;
 	}
@@ -47,12 +47,12 @@ public class Car {
 		this.carBrand = carBrand;
 	}
 
-	public String getCarModell() {
-		return carModell;
+	public String getCarModel() {
+		return carModel;
 	}
 
 	public void setCarModell(String carModell) {
-		this.carModell = carModell;
+		this.carModel = carModell;
 	}
 
 	public String getPlate() {

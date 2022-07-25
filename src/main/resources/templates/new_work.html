@@ -8,26 +8,41 @@
 <body>
 
 	<div class="newworkTable">
-	<form action="">
+	<form th:action="@{/home}" th:object = "${newcar}" method="POST">
 	
 		<h1>Record a new work</h1>
 			<table>
 			
 				<tr>
 					<td>Car Brand:</td>
-					<td><input/>
+					<td><input
+					type="text"
+					name="carBrand"
+					th:field="*{carBrand}"
+					/>
 				</tr>
 				<tr>	
-					<td>Car Modell:</td>
-					<td><input/>
+					<td>Car Model:</td>
+					<td><input
+					type="text"
+					name="carModel"
+					th:field="*{carModel}"
+					/>
 				</tr>
 				<tr>
 					<td>Plate Number:</td>
-					<td><input placeholder="XXX000"/>
+					<td><input 
+					type="text"
+					name="plate"
+					th:field="*{plate}"
+					placeholder="XXX000"/>
 				</tr>
 				<tr>
 					<td>Problem description:</td>
-					<td><input/>
+					<td><input
+					type="text"
+					name="problemDescription"
+					th:field="*{problemDescription}"/>
 				</tr>				
 			
 			</table>

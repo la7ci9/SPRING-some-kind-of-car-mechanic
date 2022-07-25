@@ -16,10 +16,9 @@ public class DashboardController {
 		return "all_work";
 	}
 	
-	@GetMapping("/add")
-	public String takeNewWork() {
-		return "new_work";
-	}
+	/*
+	 * @GetMapping("/add") public String takeNewWork() { return "new_work"; }
+	 */
 	
 	@GetMapping("/employees")
 	public String employeesPage() {

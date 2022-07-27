@@ -8,5 +8,38 @@
 
 <h1>Employee page</h1>
 
+		<div>
+			<a th:href = "@{employee/new}">Add new employee</a>
+		</div>
+		
+		<div class="allemployee">
+		
+		<table>
+			<thead>
+				<tr>
+					<th>Employee First Name</th>
+					<th>Employee Last Name</th>
+					<th>Student Email</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr th:each = "">
+					<td th:text = "$"></td>
+					<td th:text = "$"></td>
+					<td th:text = "$"></td>
+					<td>
+						<a th:href = "@">Update</a>
+						<a th:href = "@">Delete</a>
+						<a th:href = "@">View</a>
+					</td>
+				</tr>
+			</tbody>
+			
+		</table>
+		
+		</div>
+
 </body>
 </html>

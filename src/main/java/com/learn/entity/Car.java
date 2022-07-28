@@ -1,5 +1,7 @@
 package com.learn.entity;
 
+import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,6 +21,7 @@ public class Car {
 	private String status;
 	private String problemDescription;
 	private String mechanicName;
+	private LocalDate broughtIn;
 	
 	public Car() {
 		//empty constructor
@@ -51,8 +54,8 @@ public class Car {
 		return carModel;
 	}
 
-	public void setCarModell(String carModell) {
-		this.carModel = carModell;
+	public void setCarModel(String carModel) {
+		this.carModel = carModel;
 	}
 
 	public String getPlate() {
@@ -86,4 +89,13 @@ public class Car {
 	public void setMechanicName(String mechanicName) {
 		this.mechanicName = mechanicName;
 	}
+
+	public LocalDate getBroughtIn() {
+		return broughtIn;
+	}
+
+	public void setBroughtIn(LocalDate broughtIn) {
+		this.broughtIn = broughtIn;
+	}
+	
 }

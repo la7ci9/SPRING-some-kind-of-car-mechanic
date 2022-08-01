@@ -21,17 +21,18 @@ public class Car {
 	private String status;
 	private String problemDescription;
 	private String mechanicName;
-	private LocalDate broughtIn;
+	private String broughtIn;
 	
 	public Car() {
 		//empty constructor
 	}
 	
-	public Car(String carBrand, String carModel, String plate, String status) {
+	public Car(String carBrand, String carModel, String plate, String status, String broughtIn) {
 		this.carBrand = carBrand;
 		this.carModel = carModel;
 		this.plate = plate;
 		this.status = status;
+		this.broughtIn = broughtIn;
 	}
 
 	public Long getId() {
@@ -90,11 +91,11 @@ public class Car {
 		this.mechanicName = mechanicName;
 	}
 
-	public LocalDate getBroughtIn() {
+	public String getBroughtIn() {
 		return broughtIn;
 	}
 
-	public void setBroughtIn(LocalDate broughtIn) {
+	public void setBroughtIn(String broughtIn) {
 		this.broughtIn = broughtIn;
 	}
 	

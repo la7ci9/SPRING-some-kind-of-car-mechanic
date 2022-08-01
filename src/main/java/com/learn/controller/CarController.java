@@ -25,13 +25,14 @@ public class CarController {
 	@GetMapping("/add")
 	public String takeNewWork(Model model) {
 		Car car = new Car();
-		car.setBroughtIn(LocalDate.now());
+		//car.setBroughtIn(LocalDate.now().toString());
 		model.addAttribute("newcar", car);
 		return "new_work";
 	}
 	
 	@PostMapping("/home")
 	public String saveCar(@ModelAttribute("newcar") Car car) {
+		car.setBroughtIn(LocalDate.now().toString());
 		carService.saveCar(car);
 		return "redirect:/home";
 	}

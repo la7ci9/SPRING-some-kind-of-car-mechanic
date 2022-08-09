@@ -33,8 +33,10 @@ public class DashboardController {
 	
 	@GetMapping("/mechanic")
 	public String logMechanic(Model model) {
-		model.addAttribute("cars", carsSorted = carService.getAllCar().stream().sorted(Comparator.comparing(Car::getBroughtIn)).toList());
-		//EZ ROSSZ, ÁTNÉZNI A STREAM-ET
+		model.addAttribute("cars", carsSorted = carService.getAllCar()
+				.stream()
+				.sorted(Comparator.comparing(Car::getBroughtIn))
+				.toList());
 		return "mechanic_dash";
 	}
 }
